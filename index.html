@@ -1,0 +1,62 @@
+<!-- Made By Bijan Shrestha -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Editor With Download</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Cropper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <center><span>@Bijan Shrestha</span></center>
+    <div class="wrapper">
+     
+      <div class="editor-container">
+        <div class="image-container">
+          <img id="image" />
+        </div>
+        <input type="file" id="file" accept="image/*" />
+        <label for="file">Open A Photo</label>
+        <div class="options-btn hide">
+          <button id="rotate-left">
+            <img src="rotate-left.png" />
+          </button>
+          <button id="rotate-right">
+            <img src="rotate-right.png" />
+          </button>
+          <button id="scale-X-button">
+            <img src="flip-hori.png" />
+          </button>
+          <button id="scale-Y-button">
+            <img src="flip-ver.png" />
+          </button>
+          <button class="aspect-ratio-btns">16:9</button>
+          <button class="aspect-ratio-btns">4:3</button>
+          <button class="aspect-ratio-btns">1:1</button>
+          <button class="aspect-ratio-btns">2:3</button>
+          <button class="aspect-ratio-btns">Free</button>
+        </div>
+        <div class="action-btns">
+          <button id="preview" class="hide">Preview</button>
+          <a href="" id="download" class="hide">Download</a>
+        </div>
+      </div>
+      <div class="preview-container">
+        <img id="preview-image" />
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
